@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pra Jardim - Plantas ornamentais e jardinagem em Pelotas RS. CNPJ 52.050.180/0001-10. Impatiens, Antúrios, Crótons. Laudelino G. Ribeiro 535. WhatsApp: (53) 98157-1395. Segunda a Sábado 13h-18h">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pra Jardim - Plantas e Jardinagem em Pelotas">
+    <meta property="og:description" content="Transforme seu espaço com plantas ornamentais da Pra Jardim. Variedade, qualidade e atendimento especializado.">
+    
+    <title>Pra Jardim - Plantas e Jardinagem em Pelotas RS | Segunda a Sábado 13h-18h | CNPJ 52.050.180/0001-10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+            background: #f5f5f5;
+        }
+
+        /* Header */
+        header {
+            background: #000;
+            color: white;
+            padding: 0.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 900;
+            display: flex;
+            align-items: baseline;
+            gap: 5px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .logo .pra {
+            color: #fff;
+        }
+
+        .logo .jardim {
+            color: #4CAF50;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #4CAF50;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%232d5a2d" width="1200" height="600"/><g opacity="0.1"><circle cx="100" cy="100" r="80" fill="%234CAF50"/><circle cx="300" cy="200" r="60" fill="%234CAF50"/><circle cx="500" cy="150" r="100" fill="%234CAF50"/><circle cx="700" cy="300" r="70" fill="%234CAF50"/><circle cx="900" cy="100" r="90" fill="%234CAF50"/><circle cx="1100" cy="250" r="80" fill="%234CAF50"/></g><path d="M0,300 Q200,250 400,300 T800,300 T1200,300 L1200,600 L0,600 Z" fill="%23000" opacity="0.3"/></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 70px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            font-weight: 900;
+        }
+
+        .hero .highlight {
+            color: #4CAF50;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        .cta-button:hover {
+            background: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+        }
+
+        /* Our Plants Section */
+        .our-plants {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+        .plants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .plant-card {
+            background: #f8f8f8;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .plant-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .plant-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+
+        .plant-info {
+            padding: 25px;
+        }
+
+        .plant-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .plant-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .plant-tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #4CAF50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 20px;
+            background: #000;
+            color: white;
+        }
+
+        .services .section-title {
+            color: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: rgba(255,255,255,0.05);
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .service-card:hover {
+            background: rgba(76, 175, 80, 0.1);
+            transform: translateY(-5px);
+            border-color: #4CAF50;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            fill: #4CAF50;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .about-text h2 {
+            color: #000;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .about-text p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .features-list li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        /* Clients Section */
+        .clients {
+            padding: 80px 20px;
+            background: #f5f5f5;
+        }
+
+        .client-stats {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .stats-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .stats-text {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .client-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .client-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-color: #4CAF50;
+        }
+
+        .client-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #4CAF50 0%, #2d5a2d 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .client-icon::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+
+        .client-card:hover .client-icon::before {
+            animation: shine 0.5s ease-in-out;
+        }
+
+        @keyframes shine {
+            0% { transform: rotate(45deg) translate(-100%, -100%); }
+            100% { transform: rotate(45deg) translate(100%, 100%); }
+        }
+
+        .client-icon svg {
+            width: 50px;
+            height: 50px;
+            fill: white;
+        }
+
+        .client-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .client-type {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.2rem;
+        }
+
+        .contact-item svg {
+            width: 30px;
+            height: 30px;
+            fill: #4CAF50;
+        }
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-button:hover {
+            background: #20BA5A;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Partners Section */
+        .partners {
+            padding: 60px 20px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        .partners h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .partner-info {
+            max-width: 600px;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer .logo {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* Social Media Footer */
+        .social-media-footer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .social-icon-footer {
+            width: 35px;
+            height: 35px;
+            fill: #fff;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-icon-footer:hover {
+            opacity: 1;
+            fill: #4CAF50;
+            transform: scale(1.2);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .plants-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .clients-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-number {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Floating effect */
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5553981571395" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"/>
+        </svg>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="pra">Pra</span>
+                <span class="jardim">Jardim</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#plants">Nossas Plantas</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#clients">Clientes</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="https://www.instagram.com/pra_jardim" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;">
+                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Transforme seu espaço com a <span class="highlight">Pra Jardim</span></h1>
+            <p>Plantas ornamentais, jardinagem profissional e paisagismo para condomínios</p>
+            <a href="#contact" class="cta-button">Entre em Contato</a>
+        </div>
+    </section>
+
+    <!-- Our Plants Section -->
+    <section class="our-plants" id="plants">
+        <div class="container">
+            <h2 class="section-title">Nossas Plantas</h2>
+            <p class="section-subtitle">Cultivamos com amor uma grande variedade de plantas ornamentais</p>
+            
+            <div class="plants-grid">
+                <div class="plant-card">
+                    <div class="plant-image" style="background: url('imagens/impatiens.jpg') center/cover;"></div>
+                    <div class="plant-info">
+                        <h3 class="plant-name">Impatiens (Beijinho)</h3>
+                        <p class="plant-description">Flores vibrantes em vermelho, laranja, rosa e lilás. Florescem o ano todo, ideais para jardins com meia-sombra.</p>
+                        <div class="plant-tags">
+                            <span class="tag">Meia-sombra</span>
+                            <span class="tag">Florífera</span>
+                            <span class="tag">Cores Variadas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-image" style="background: url('imagens/anturio.jpg') center/cover;"></div>
+                    <div class="plant-info">
+                        <h3 class="plant-name">Antúrio</h3>
+                        <p class="plant-description">Elegante planta com folhas em formato de coração. Perfeita para ambientes internos e externos protegidos.</p>
+                        <div class="plant-tags">
+                            <span class="tag">Interior/Exterior</span>
+                            <span class="tag">Folhagem</span>
+                            <span class="tag">Fácil Cultivo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-image" style="background: url('imagens/croton.jpg') center/cover;"></div>
+                    <div class="plant-info">
+                        <h3 class="plant-name">Cróton Petra</h3>
+                        <p class="plant-description">Espetacular folhagem amarela e verde variegada. Adiciona cor e vida a qualquer jardim ensolarado.</p>
+                        <div class="plant-tags">
+                            <span class="tag">Sol pleno</span>
+                            <span class="tag">Colorida</span>
+                            <span class="tag">Tropical</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-image" style="background: url('imagens/maranta.jpg') center/cover;"></div>
+                    <div class="plant-info">
+                        <h3 class="plant-name">Maranta Tricolor</h3>
+                        <p class="plant-description">Folhas com padrões únicos em verde e amarelo. Movimento natural das folhas durante o dia.</p>
+                        <div class="plant-tags">
+                            <span class="tag">Meia-sombra</span>
+                            <span class="tag">Decorativa</span>
+                            <span class="tag">Interior</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-image" style="background: url('imagens/ficus-elastica.jpg') center/cover;"></div>
+                    <div class="plant-info">
+                        <h3 class="plant-name">Ficus Elástica Variegata</h3>
+                        <p class="plant-description">Folhas grandes com tons de verde, amarelo e creme. Planta robusta ideal para interiores amplos.</p>
+                        <div class="plant-tags">
+                            <span class="tag">Interior</span>
+                            <span class="tag">Folhagem</span>
+                            <span class="tag">Purifica o ar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-image" style="background: url('imagens/jardim-completo.jpg') center/cover;"></div>
+                    <div class="plant-info">
+                        <h3 class="plant-name">Composições para Jardim</h3>
+                        <p class="plant-description">Criamos belos arranjos combinando diversas espécies. Incluindo Tradescantia, coníferas e plantas tropicais.</p>
+                        <div class="plant-tags">
+                            <span class="tag">Paisagismo</span>
+                            <span class="tag">Personalizado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-image" style="background: url('imagens/terra-nossa-terra.jpg') center/cover;"></div>
+                    <div class="plant-info">
+                        <h3 class="plant-name">Terra Orgânica Nossa Terra</h3>
+                        <p class="plant-description">Composto orgânico de alta qualidade. Embalagem retornável - compromisso com o meio ambiente.</p>
+                        <div class="plant-tags">
+                            <span class="tag">25kg</span>
+                            <span class="tag">Orgânico</span>
+                            <span class="tag">Sustentável</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-image" style="background: url('imagens/mais-plantas.jpg') center/cover;"></div>
+                    <div class="plant-info">
+                        <h3 class="plant-name">Variedade em Plantas</h3>
+                        <p class="plant-description">Ampla seleção de mudas, plantas ornamentais e espécies para todos os tipos de projetos.</p>
+                        <div class="plant-tags">
+                            <span class="tag">Diversidade</span>
+                            <span class="tag">Qualidade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z"/>
+                    </svg>
+                    <h3>Venda de Plantas</h3>
+                    <p>Grande variedade de plantas ornamentais, flores e mudas para seu jardim</p>
+                </div>
+                
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M12,18.5A3.5,3.5 0 0,1 8.5,15A3.5,3.5 0 0,1 12,11.5A3.5,3.5 0 0,1 15.5,15A3.5,3.5 0 0,1 12,18.5M12,7A8,8 0 0,0 4,15A8,8 0 0,0 12,23A8,8 0 0,0 20,15A8,8 0 0,0 12,7M12,1L17,6V9C16.67,9 16.34,9 16,9.03C15,6.19 12,4 8.5,4C8.16,4 7.84,4.04 7.5,4.08V6L12,1Z"/>
+                    </svg>
+                    <h3>Jardinagem</h3>
+                    <p>Serviços completos de jardinagem, desde o plantio até a manutenção</p>
+                </div>
+                
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19.36,2.72L20.78,4.14L15.06,9.85C16.13,11.39 16.28,13.24 15.38,14.44L9.06,8.12C10.26,7.22 12.11,7.37 13.65,8.44L19.36,2.72M5.93,17.57C3.92,15.56 2.69,13.16 2.35,10.92L7.23,8.83L14.67,16.27L12.58,21.15C10.34,20.81 7.94,19.58 5.93,17.57Z"/>
+                    </svg>
+                    <h3>Consultoria</h3>
+                    <p>Orientação especializada para escolha das melhores plantas para seu espaço</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Cultivando Verde em Pelotas</h2>
+                    <p>A <strong>Pra Jardim</strong> é especializada em plantas ornamentais e jardinagem em Pelotas e região. Nossa missão é levar mais verde e vida para os espaços, transformando ambientes com a beleza natural das plantas.</p>
+                    <p>Com experiência no atendimento a condomínios residenciais, edifícios comerciais e instituições, oferecemos serviços completos de paisagismo, manutenção e fornecimento de plantas. Nossa equipe cuida de cada detalhe para manter os jardins sempre bonitos e saudáveis.</p>
+                    
+                    <ul class="features-list">
+                        <li>Grande variedade de plantas ornamentais</li>
+                        <li>Mudas saudáveis e bem cuidadas</li>
+                        <li>Orientação para cultivo e manutenção</li>
+                        <li>Produtos orgânicos e sustentáveis</li>
+                        <li>Atendimento personalizado</li>
+                    </ul>
+                </div>
+                
+                <div class="about-image float">
+                    <svg viewBox="0 0 400 400" style="width: 100%; height: auto;">
+                        <!-- Background -->
+                        <rect fill="#f5f5f5" width="400" height="400"/>
+                        
+                        <!-- Building silhouettes with gradient -->
+                        <defs>
+                            <linearGradient id="buildGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:0.9" />
+                                <stop offset="100%" style="stop-color:#2d5a2d;stop-opacity:0.7" />
+                            </linearGradient>
+                        </defs>
+                        
+                        <rect x="50" y="150" width="80" height="200" fill="url(#buildGrad1)"/>
+                        <rect x="150" y="100" width="100" height="250" fill="#2d5a2d" opacity="0.8"/>
+                        <rect x="270" y="180" width="80" height="170" fill="url(#buildGrad1)" opacity="0.8"/>
+                        
+                        <!-- Windows -->
+                        <rect x="60" y="170" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        <rect x="85" y="170" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        <rect x="110" y="170" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        <rect x="60" y="200" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        <rect x="85" y="200" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        <rect x="110" y="200" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        
+                        <rect x="165" y="120" width="20" height="25" fill="#fff" opacity="0.9"/>
+                        <rect x="195" y="120" width="20" height="25" fill="#fff" opacity="0.9"/>
+                        <rect x="225" y="120" width="20" height="25" fill="#fff" opacity="0.9"/>
+                        <rect x="165" y="155" width="20" height="25" fill="#fff" opacity="0.9"/>
+                        <rect x="195" y="155" width="20" height="25" fill="#fff" opacity="0.9"/>
+                        <rect x="225" y="155" width="20" height="25" fill="#fff" opacity="0.9"/>
+                        
+                        <rect x="280" y="200" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        <rect x="305" y="200" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        <rect x="330" y="200" width="15" height="20" fill="#fff" opacity="0.9"/>
+                        
+                        <!-- Gardens in front -->
+                        <circle cx="80" cy="350" r="15" fill="#2ecc71" opacity="0.8"/>
+                        <circle cx="120" cy="350" r="12" fill="#27ae60" opacity="0.8"/>
+                        <circle cx="200" cy="350" r="18" fill="#2ecc71" opacity="0.8"/>
+                        <circle cx="250" cy="350" r="15" fill="#27ae60" opacity="0.8"/>
+                        <circle cx="300" cy="350" r="12" fill="#2ecc71" opacity="0.8"/>
+                        
+                        <!-- Trees -->
+                        <rect x="75" y="320" width="10" height="30" fill="#8B4513"/>
+                        <rect x="195" y="310" width="10" height="40" fill="#8B4513"/>
+                        <rect x="295" y="325" width="8" height="25" fill="#8B4513"/>
+                        
+                        <!-- Logo style text -->
+                        <text x="200" y="50" text-anchor="middle" font-size="30" font-weight="900">
+                            <tspan fill="#000">Pra</tspan>
+                            <tspan fill="#4CAF50">Jardim</tspan>
+                        </text>
+                        <text x="200" y="80" text-anchor="middle" font-size="14" fill="#666">
+                            Paisagismo em Condomínios
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Cultivando Verde em Pelotas</h2>
+                    <p>A <strong>Pra Jardim</strong> é especializada em plantas ornamentais e jardinagem em Pelotas e região. Nossa missão é levar mais verde e vida para os espaços, transformando ambientes com a beleza natural das plantas.</p>
+                    <p>Trabalhamos com uma grande variedade de espécies, desde plantas floríferas como Impatiens até folhagens exuberantes como Antúrios e Crótons. Cada planta é cultivada com cuidado e dedicação para garantir qualidade e beleza.</p>
+                    
+                    <ul class="features-list">
+                        <li>Grande variedade de plantas ornamentais</li>
+                        <li>Mudas saudáveis e bem cuidadas</li>
+                        <li>Orientação para cultivo e manutenção</li>
+                        <li>Produtos orgânicos e sustentáveis</li>
+                        <li>Atendimento personalizado</li>
+                    </ul>
+                </div>
+                
+                <div class="about-image float">
+                    <svg viewBox="0 0 400 400" style="width: 100%; height: auto;">
+                        <!-- Background -->
+                        <rect fill="#f5f5f5" width="400" height="400"/>
+                        
+                        <!-- Multiple plants composition -->
+                        <!-- Central large plant -->
+                        <ellipse cx="200" cy="300" rx="60" ry="20" fill="#8B4513" opacity="0.3"/>
+                        <rect x="190" y="200" width="20" height="100" fill="#8B4513"/>
+                        <circle cx="200" cy="180" r="50" fill="#2ecc71"/>
+                        <circle cx="180" cy="170" r="30" fill="#27ae60"/>
+                        <circle cx="220" cy="170" r="30" fill="#27ae60"/>
+                        
+                        <!-- Left plant -->
+                        <ellipse cx="100" cy="320" rx="40" ry="15" fill="#8B4513" opacity="0.3"/>
+                        <rect x="95" y="250" width="10" height="70" fill="#8B4513"/>
+                        <circle cx="100" cy="240" r="30" fill="#ff6b6b"/>
+                        <circle cx="85" cy="235" r="20" fill="#ff5252"/>
+                        <circle cx="115" cy="235" r="20" fill="#ff5252"/>
+                        
+                        <!-- Right plant -->
+                        <ellipse cx="300" cy="320" rx="40" ry="15" fill="#8B4513" opacity="0.3"/>
+                        <rect x="295" y="250" width="10" height="70" fill="#8B4513"/>
+                        <ellipse cx="300" cy="230" rx="35" ry="45" fill="#f1c40f"/>
+                        <path d="M265 230 L335 230" stroke="#f39c12" stroke-width="3"/>
+                        
+                        <!-- Logo style text -->
+                        <text x="200" y="370" text-anchor="middle" font-size="40" font-weight="900">
+                            <tspan fill="#000">Pra</tspan>
+                            <tspan fill="#4CAF50">Jardim</tspan>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <h2 class="section-title">Nossos Clientes</h2>
+            <p class="section-subtitle">Condomínios e empresas que confiam em nosso trabalho</p>
+            <p style="text-align: center; margin-top: 20px; color: #4CAF50; font-weight: 600;">
+                🌿 Manutenção • Paisagismo • Fornecimento de Plantas 🌿
+            </p>
+            
+            <div class="client-stats">
+                <div class="stats-number">15+</div>
+                <div class="stats-text">Condomínios e Empresas Atendidos em Pelotas</div>
+            </div>
+            
+            <div class="clients-grid">
+                <div class="client-card">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="client-name">Residencial Vivendas do Laranjal</h3>
+                    <p class="client-type">Condomínio Residencial</p>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="client-name">Edifício Santa Marta</h3>
+                    <p class="client-type">Edifício Residencial</p>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18.5,3H6A1.5,1.5 0 0,0 4.5,4.5V9H3V10.5H4.5V15H3V16.5H4.5V21H6V3H18.5V17H13.5V21H20.5V4.5A1.5,1.5 0 0,0 19,3H18.5M8,5V7H10V5H8M12,5V7H14V5H12M16,5V7H18V5H16M8,9V11H10V9H8M12,9V11H14V9H12M16,9V11H18V9H16M8,13V15H10V13H8M12,13V15H14V13H12M16,13V19H18V13H16M8,17V19H10V17H8M11,21V19H8V21H11Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="client-name">Edifício Vista Real</h3>
+                    <p class="client-type">Condomínio</p>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.5C14.34,8.5 16.25,10.41 16.25,12.75C16.25,14.56 15.24,16.13 13.81,16.82L12.94,15.31C13.69,15.03 14.25,14.28 14.25,13.38C14.25,12.23 13.28,11.25 12.13,11.25C10.97,11.25 10,12.23 10,13.38H8C8,11.13 9.84,9.28 12.13,9.28V8.5H12M12,8.5V6.5H13V8.5H12M12,8.5H14V9.5H12V8.5Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="client-name">Sociedade Portuguesa de Beneficência</h3>
+                    <p class="client-type">Instituição</p>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="client-name">Itamarati Centro de Saúde</h3>
+                    <p class="client-type">Centro de Saúde</p>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,9V13H8L12,17L16,13H13V9H11Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="client-name">Germinaser Espaço Terapêutico</h3>
+                    <p class="client-type">Espaço Terapêutico & Coworking</p>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M5,5V19H19V5H5M7,7H17V9H7V7M7,11H17V13H7V11M7,15H17V17H7V15Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="client-name">Lucas & Miller</h3>
+                    <p class="client-type">Administração Imobiliária</p>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2M19,20H5V4H19V20M7,6V8H17V6H7M7,10V12H17V10H7M7,14V18H11V14H7M13,14V16H17V14H13Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="client-name">JK Spot</h3>
+                    <p class="client-type">Aluguel de Imóveis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h3>Parceria de Qualidade</h3>
+            <div class="partner-info">
+                <p>Utilizamos produtos da <strong>Nossa Terra</strong>, empresa comprometida com a sustentabilidade e qualidade. Terra orgânica e compostos que garantem o melhor desenvolvimento para suas plantas.</p>
+                <p style="margin-top: 20px;">📱 <strong>Siga-nos no Instagram:</strong> <a href="https://www.instagram.com/pra_jardim" target="_blank" style="color: #4CAF50; text-decoration: none;">@pra_jardim</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery" style="padding: 80px 20px; background: white;">
+        <div class="container">
+            <h2 class="section-title">Galeria de Fotos</h2>
+            <p class="section-subtitle">Conheça nossos produtos e trabalhos realizados</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 40px;">
+                
+                <!-- Foto 1 -->
+                <div style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s ease;" 
+                     onmouseover="this.style.transform='scale(1.05)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+                    <img src="imagens/galeria-01.jpg" alt="Impatiens coloridos" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 20px;">
+                        <h3 style="color: white; margin: 0;">Impatiens em Cores Vibrantes</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 5px 0 0 0;">Perfeitos para meia-sombra</p>
+                    </div>
+                </div>
+                
+                <!-- Foto 2 -->
+                <div style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.05)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+                    <img src="imagens/galeria-02.jpg" alt="Antúrios elegantes" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 20px;">
+                        <h3 style="color: white; margin: 0;">Antúrios de Qualidade</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 5px 0 0 0;">Folhagem exuberante</p>
+                    </div>
+                </div>
+                
+                <!-- Foto 3 -->
+                <div style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.05)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+                    <img src="imagens/galeria-03.jpg" alt="Crótons coloridos" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 20px;">
+                        <h3 style="color: white; margin: 0;">Crótons Petra</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 5px 0 0 0;">Cores vibrantes para seu jardim</p>
+                    </div>
+                </div>
+                
+                <!-- Foto 4 -->
+                <div style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.05)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+                    <img src="imagens/galeria-04.jpg" alt="Jardim paisagístico" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 20px;">
+                        <h3 style="color: white; margin: 0;">Projetos de Paisagismo</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 5px 0 0 0;">Criamos ambientes únicos</p>
+                    </div>
+                </div>
+                
+                <!-- Foto 5 -->
+                <div style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.05)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+                    <img src="imagens/galeria-05.jpg" alt="Terra Nossa Terra" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 20px;">
+                        <h3 style="color: white; margin: 0;">Terra Orgânica Nossa Terra</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 5px 0 0 0;">Qualidade garantida</p>
+                    </div>
+                </div>
+                
+                <!-- Foto 6 -->
+                <div style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); cursor: pointer; transition: all 0.3s ease;"
+                     onmouseover="this.style.transform='scale(1.05)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+                    <img src="imagens/galeria-06.jpg" alt="Variedade de plantas" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 20px;">
+                        <h3 style="color: white; margin: 0;">Nossa Variedade</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 5px 0 0 0;">Plantas para todos os gostos</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Venha nos Visitar!</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 10px;">Transforme seu espaço com as plantas da Pra Jardim</p>
+            <p style="font-size: 1.1rem; margin-bottom: 5px; color: #4CAF50; font-weight: bold;">⏰ Segunda a Sábado - 13h às 18h</p>
+            <p style="font-size: 0.9rem; margin-bottom: 30px; opacity: 0.8;">CNPJ: 52.050.180/0001-10</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                    </svg>
+                    <span>(53) 98157-1395</span>
+                </div>
+                
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                    </svg>
+                    <span>prajardim19@gmail.com</span>
+                </div>
+                
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                    </svg>
+                    <span>Laudelino G. Ribeiro, 535 - Pelotas/RS</span>
+                </div>
+                
+                <div class="contact-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+                    </svg>
+                    <span>@pra_jardim</span>
+                </div>
+            </div>
+            
+            <a href="https://wa.me/5553981571395" class="whatsapp-button" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"/>
+                </svg>
+                Fale Conosco no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <span class="pra">Pra</span>
+            <span class="jardim">Jardim</span>
+        </div>
+        
+        <div class="social-media-footer">
+            <a href="https://www.instagram.com/pra_jardim" target="_blank" title="Instagram">
+                <svg class="social-icon-footer" viewBox="0 0 24 24">
+                    <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+                </svg>
+            </a>
+            <a href="mailto:prajardim19@gmail.com" title="Email">
+                <svg class="social-icon-footer" viewBox="0 0 24 24">
+                    <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                </svg>
+            </a>
+            <a href="https://wa.me/5553981571395" target="_blank" title="WhatsApp">
+                <svg class="social-icon-footer" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"/>
+                </svg>
+            </a>
+        </div>
+        
+        <p>&copy; 2024 Pra Jardim. Todos os direitos reservados.</p>
+        <p>📍 Laudelino G. Ribeiro, 535 - CEP 96081-780 - Pelotas/RS</p>
+        <p>⏰ Segunda a Sábado: 13h às 18h | CNPJ: 52.050.180/0001-10</p>
+        <p>Cultivando verde e vida em Pelotas 🌿</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(0, 0, 0, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#000';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.plant-card, .service-card, .about-content, .client-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+        // Animate client counter
+        const statsNumber = document.querySelector('.stats-number');
+        if (statsNumber) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        let count = 0;
+                        const target = 15;
+                        const increment = target / 50;
+                        const timer = setInterval(() => {
+                            count += increment;
+                            if (count >= target) {
+                                count = target;
+                                clearInterval(timer);
+                            }
+                            statsNumber.textContent = Math.floor(count) + '+';
+                        }, 30);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            observer.observe(statsNumber);
+        }
+    </script>
+</body>
+</html>
